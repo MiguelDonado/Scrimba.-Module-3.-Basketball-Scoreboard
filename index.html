@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="first-section">
+        <div class="points-team">
+            <h3 id="points-home">0</h3>
+            <h3 class="team">HOME</h3>
+        </div>
+        <div id="period">
+            <h5>PERIOD</h5>
+            <h5 class="rest-numbers" id="period-number">1</h5>
+            <button class="add-btn fault-btn" onclick="sumOnePeriod()">+1</button>
+        </div>
+        <div class="points-team">
+            <h3 id="points-guest">0</h3>
+            <h3 class="team">GUEST</h3>
+        </div>
+    </div>
+    <div id="btn-section">
+        <div>
+            <button class="add-btn" onclick="sumOneHome()">+1</button>
+            <button class="add-btn" onclick="sumTwoHome()">+2</button>
+            <button class="add-btn" onclick="sumThreeHome()">+3</button>
+        </div>
+        <button id="restart-btn" onclick="newGame()">New Game</button>
+        <div>
+            <button class="add-btn" onclick="sumOneGuest()">+1</button>
+            <button class="add-btn" onclick="sumTwoGuest()">+2</button>
+            <button class="add-btn" onclick="sumThreeGuest()">+3</button>
+        </div>
+    </div>
+    <div id="fault-section">
+        <div class="fault-item">    
+            <h4 id="fault-home">0</h4>
+            <h5 id="fault-title">FAULTS</h5>
+            <button class="add-btn fault-btn" onclick="sumOneFaultHome()">+1</button>
+        </div>  
+        <div class="fault-item">      
+            <h4 id="fault-guest">0</h4>
+            <h5 id="fault-title">FAULTS</h5>
+            <button class="add-btn fault-btn" onclick="sumOneFaultGuest()">+1</button>
+        </div>
+    </div>
+    
+
+
+
+    <div id="title-section">
+    </div>
+    <div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
